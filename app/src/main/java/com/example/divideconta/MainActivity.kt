@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun calcBill(){
-        val valbill = binding.edtBill.text.toString().toDouble()
-        val valservice = binding.edtServices.text.toString().toDouble()
-        val valcrew = binding.edtCrew.text.toString().toInt()
+        val valbill = binding.edtBillInput.text.toString().toDouble()
+        val valservice = binding.edtServicesInput.text.toString().toDouble()
+        val valcrew = binding.edtCrewInput.text.toString().toInt()
 
         val bill = Bill(valbill,valservice,valcrew)
 

@@ -6,41 +6,62 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtBill"
         android:layout_width="140dp"
-        android:layout_height="48dp"
+        android:layout_height="68dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Bill Value"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtBillInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtCrew"
         android:layout_width="140dp"
-        android:layout_height="48dp"
+        android:layout_height="68dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Crew"
-        android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/edtBill"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+        app:layout_constraintStart_toEndOf="@+id/edtBill"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCrewInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtServices"
         android:layout_width="140dp"
-        android:layout_height="48dp"
+        android:layout_height="68dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Services (%)"
-        android:inputType="numberDecimal"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtBill" />
+        app:layout_constraintTop_toBottomOf="@+id/edtBill">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtServicesInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button"
